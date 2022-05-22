@@ -1,0 +1,3 @@
+INSERT INTO `staff` (`id`,`username`, `password`, `first_name`, `last_name`, `join_date`, `time`, `email`, `role`, `profile_image_url`, `address`, `is_active`, `is_not_locked`) VALUES ('1','ghj', 'fgjknhkj', 'jklnlhjk', 'jbgklhnkj', '2022-06-12', '12:05:05', 'vhmfbfvg', 'admin', 'hgfvghv', 'jhvhvj', b'1', b'1');
+INSERT INTO `staff` (`id`,`username`, `password`, `first_name`, `last_name`, `join_date`, `time`, `email`, `role`, `profile_image_url`, `address`, `is_active`, `is_not_locked`)
+ VALUES ('2','phelumie', 'springboot', 'sunday', 'Adeniran', '2022-06-12', '12:05:05', 'ww@hh.com', 'admin', 'hgfvghv', 'jhvhvj', b'1', b'1');

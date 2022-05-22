@@ -1,0 +1,33 @@
+spring:
+  cloud:
+    gateway:
+      default-filters:
+#        - TokenRelay
+      routes:
+        - id: staff-service
+          uri: lb://staff
+          predicates:
+            - Path=/staff/**
+          filters:
+            - RewritePath=/staff/(?<path>.*), /$\{path}
+
+        - id: items-service
+          uri: lb://items
+          predicates:
+            - Path=/items/**
+          filters:
+            - RewritePath=/items/(?<path>.*), /$\{path}
+
+        - id: sales-service
+          uri: lb://sales
+          predicates:
+            - Path=/sales/**
+          filters:
+            - RewritePath=/sales/(?<path>.*), /$\{path}
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
