@@ -7,9 +7,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>micro-item-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-     
-	
+	<packaging>jar</packaging>	
 	<name>item-service</name>
 	<description>tem service demo project</description>
 	<parent>
